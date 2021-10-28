@@ -14,6 +14,10 @@ TARGET_KERNEL_PLATFORM_SOURCE := google/gs-$(TARGET_LINUX_KERNEL_VERSION)
 # Inherit from gs201
 include device/google/gs201/common.mk
 
+# EUICC
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/permissions/permissions_com.google.android.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.euicc.xml
+
 # Fold extensions
 PRODUCT_SYSTEM_SERVER_JARS += \
     system_ext:felix-services
