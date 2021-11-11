@@ -19,6 +19,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
 
+# Kernel
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/Image.lz4
+
 # Pixel Camera Services / Camera extensions
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/permissions/permissions_com.google.android.apps.camera.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.apps.camera.services.xml
