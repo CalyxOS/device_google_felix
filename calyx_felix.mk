@@ -11,6 +11,7 @@ $(call inherit-product, vendor/calyx/config/common_foldable_book_telephony.mk)
 # Inherit device configuration
 DEVICE_CODENAME := felix
 DEVICE_PATH := device/google/felix
+VENDOR_PATH := vendor/google/felix
 $(call inherit-product, device/google/gs201/calyx_common.mk)
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-calyx.mk)
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
@@ -29,3 +30,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/felix/felix:15/AP3A.241005.015/12366759:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+$(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
