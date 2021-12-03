@@ -18,3 +18,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/felix/felix:13/TQ3C.230605.010.C1/10167124:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+$(call inherit-product, vendor/google/felix/felix-vendor.mk)
