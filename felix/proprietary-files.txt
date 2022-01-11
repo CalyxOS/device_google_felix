@@ -85,7 +85,7 @@ system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
 
 # UWB
 system_ext/etc/permissions/privapp-permissions-qorvo.xml
-system_ext/priv-app/UwbVendorService/UwbVendorService.apk;PRESIGNED
+system_ext/priv-app/UwbVendorService/UwbVendorService.apk;CERTIFICATE=com.qorvo.uwb.certificate
 
 # VINTF
 system_ext/etc/vintf/aocx_framework_compatibility_matrix_system_ext
