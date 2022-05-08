@@ -14,3 +14,7 @@ PRODUCT_COPY_FILES += \
 # For Google Camera
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/sysconfig/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
+
+# HBM
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
