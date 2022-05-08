@@ -22,6 +22,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_SERVER_JARS += \
     system_ext:felix-services
 
+# HBM
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
+
 # Hinge angle sensor
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.hinge_angle.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hinge_angle.xml
