@@ -13,6 +13,9 @@ PRODUCT_COPY_FILES += \
     device/google/felix/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
 # HBM
+PRODUCT_COPY_FILES += \
+    device/google/felix/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
+
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayFelix
 
