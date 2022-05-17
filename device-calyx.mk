@@ -16,6 +16,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/google/felix/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
 
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlayFelix
+
 TARGET_PREBUILT_KERNEL := device/google/felix-kernel/Image.lz4
 
 # Build necessary packages for vendor
