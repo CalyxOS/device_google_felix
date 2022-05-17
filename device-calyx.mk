@@ -12,6 +12,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/google/felix/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
+# HBM
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlayFelix
+
 TARGET_PREBUILT_KERNEL := device/google/felix-kernel/Image.lz4
 
 # wireless_charger HAL service
