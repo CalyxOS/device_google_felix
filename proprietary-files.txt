@@ -2,6 +2,9 @@
 
 # product partition
 
+# Camera extensions
+product/app/PixelCameraServicesF10/PixelCameraServicesF10.apk;PRESIGNED
+
 # IMS
 product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 
@@ -9,6 +12,10 @@ product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
 # system_ext partition
+
+# Camera extensions
+system_ext/etc/permissions/com.google.android.camera.extensions.xml
+system_ext/framework/com.google.android.camera.extensions.jar
 
 # Edge TPU
 system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service
