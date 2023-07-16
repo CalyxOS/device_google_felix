@@ -17,4 +17,7 @@
 <resources>
     <!-- Whether to show Smooth Display feature in Settings Options -->
     <bool name="config_show_smooth_display">true</bool>
+
+    <!-- The ratio to use when using the two-pane settings layout -->
+    <item name="config_activity_embed_split_ratio" format="float" type="dimen">0.5</item>
 </resources>
