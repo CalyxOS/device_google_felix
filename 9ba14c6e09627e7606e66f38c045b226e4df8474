@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50bf2de3_27abb3e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2023-07-16T16:28:28Z",
+      "side": 1,
+      "message": "Test:\n1. Build and install change\n2. adb logcat | grep -i hbm\n3. Shine a torch on the display sensor. Display will get super bright, and there will be matching log lines.",
+      "revId": "9ba14c6e09627e7606e66f38c045b226e4df8474",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
