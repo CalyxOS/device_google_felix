@@ -33,6 +33,24 @@
       "message": "https://github.com/zacharee/CameraXInfo shows no extension support for anything, Camera2 or CameraX.",
       "revId": "4fa827c18a0f6f02cf4025924007090dae0ee3c2",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9769332_eb49ce97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-19T19:21:10Z",
+      "side": 1,
+      "message": "Never mind. It works if you update Pixel Camera Services via Aurora Store.\n\nEven on stock, it\u0027s out-of-date until you update and doesn\u0027t work.",
+      "parentUuid": "4f0f23cf_bdbd7c6e",
+      "revId": "4fa827c18a0f6f02cf4025924007090dae0ee3c2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
