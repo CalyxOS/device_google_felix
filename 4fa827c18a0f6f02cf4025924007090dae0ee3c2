@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61c93fc7_28b7c4bd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2023-07-19T13:28:19Z",
+      "side": 1,
+      "message": "Doesn\u0027t crash at least (after building/running after extract-files with the ota)\n\nStill don\u0027t know a way to test without Snapchat, where I don\u0027t have an account",
+      "revId": "4fa827c18a0f6f02cf4025924007090dae0ee3c2",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
