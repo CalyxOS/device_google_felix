@@ -14,9 +14,9 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=felix \
-    PRIVATE_BUILD_DESC="felix-user 13 TQ3C.230705.001.C1 10333960 release-keys"
+    PRIVATE_BUILD_DESC="felix-user 13 TQ3C.230805.001.A3 10345103 release-keys"
 
-BUILD_FINGERPRINT := google/felix/felix:13/TQ3C.230705.001.C1/10333960:user/release-keys
+BUILD_FINGERPRINT := google/felix/felix:13/TQ3C.230805.001.A3/10345103:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
