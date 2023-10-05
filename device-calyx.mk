@@ -32,12 +32,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.cameraservice.common@2.0.vendor:64 \
-    android.frameworks.cameraservice.device@2.0.vendor:64 \
-    android.frameworks.cameraservice.device@2.1.vendor:64 \
-    android.frameworks.cameraservice.service@2.0.vendor:64 \
-    android.frameworks.cameraservice.service@2.1.vendor:64 \
-    android.frameworks.cameraservice.service@2.2.vendor:64 \
     libGralloc4Wrapper \
     libcamera2ndk_vendor:64 \
     pixel-power-ext-V1-ndk.vendor:32
@@ -49,7 +43,7 @@ PRODUCT_PACKAGES += \
     android.hardware.media.c2@1.2.vendor:64 \
     libacryl \
     libacryl_hdr_plugin \
-    libavservices_minijail.vendor \
+    libavservices_minijail.vendor:64 \
     libcodec2_hidl@1.0.vendor \
     libcodec2_hidl@1.1.vendor:64 \
     libcodec2_hidl@1.2.vendor:64 \
@@ -64,9 +58,16 @@ PRODUCT_PACKAGES += \
 
 # Confirmation UI
 PRODUCT_PACKAGES += \
-    android.hardware.confirmationui@1.0-lib.trusty:64 \
     android.hardware.confirmationui@1.0.vendor:64 \
+    android.hardware.confirmationui-V1-ndk.vendor:64 \
+    android.hardware.confirmationui-lib.trusty:64 \
     libteeui_hal_support.vendor:64
+
+# Graphics
+PRODUCT_PACKAGES += \
+    libEGL_angle \
+    libGLESv1_CM_angle \
+    libGLESv2_angle
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -75,6 +76,7 @@ PRODUCT_PACKAGES += \
 
 # Identity credential
 PRODUCT_PACKAGES += \
+    android.hardware.identity-V5-ndk.vendor:64 \
     android.hardware.identity-support-lib.vendor:64 \
     android.hardware.identity_credential.xml
 
@@ -87,6 +89,7 @@ PRODUCT_PACKAGES += \
     libnos_client_citadel:64 \
     libnos_datagram:64 \
     libnos_datagram_citadel:64 \
+    libnos_feature:64 \
     libnos_transport:64 \
     nos_app_avb:64 \
     nos_app_identity:64 \
@@ -103,49 +106,55 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     sensors.dynamic_sensor_hal
 
-# Wi-Fi
+# Trusty
 PRODUCT_PACKAGES += \
-    libwifi-hal:64
+    android.trusty.stats.nw.setter-cpp.vendor:64 \
+    libbinder_trusty:64 \
+    libtrusty_metrics:64
 
 # Misc interfaces
 PRODUCT_PACKAGES += \
+    android.frameworks.stats-V1-cpp.vendor:64 \
     android.frameworks.stats-V1-ndk.vendor:32 \
-    android.hardware.authsecret@1.0.vendor:64 \
-    android.hardware.biometrics.common-V2-ndk.vendor:64 \
-    android.hardware.biometrics.face-V2-ndk.vendor:64 \
+    android.hardware.authsecret-V1-ndk.vendor:64 \
+    android.hardware.biometrics.common-V3-ndk.vendor:64 \
+    android.hardware.biometrics.face-V3-ndk.vendor:64 \
     android.hardware.biometrics.face@1.0.vendor:64 \
-    android.hardware.biometrics.fingerprint-V2-ndk.vendor:64 \
+    android.hardware.biometrics.fingerprint-V3-ndk.vendor:64 \
+    android.hardware.health-V1-ndk.vendor \
     android.hardware.input.common-V1-ndk.vendor:64 \
     android.hardware.input.processor-V1-ndk.vendor:64 \
+    android.hardware.keymaster-V4-ndk.vendor:64 \
     android.hardware.keymaster@3.0.vendor:64 \
     android.hardware.keymaster@4.0.vendor:64 \
     android.hardware.keymaster@4.1.vendor:64 \
     android.hardware.neuralnetworks-V4-ndk.vendor:64 \
-    android.hardware.oemlock@1.0.vendor:64 \
+    android.hardware.oemlock-V1-ndk.vendor:64 \
     android.hardware.power@1.0.vendor:64 \
     android.hardware.power@1.1.vendor:64 \
     android.hardware.power@1.2.vendor:64 \
+    android.hardware.radio-V1-ndk.vendor \
+    android.hardware.radio.config-V1-ndk.vendor \
     android.hardware.radio.config@1.0.vendor \
     android.hardware.radio.config@1.1.vendor \
     android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.data-V1-ndk.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.radio.messaging-V1-ndk.vendor \
+    android.hardware.radio.modem-V1-ndk.vendor \
+    android.hardware.radio.network-V1-ndk.vendor \
+    android.hardware.radio.sim-V1-ndk.vendor \
+    android.hardware.radio.voice-V1-ndk.vendor \
     android.hardware.radio@1.2.vendor \
     android.hardware.radio@1.3.vendor \
     android.hardware.radio@1.4.vendor \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio@1.6.vendor \
-    android.hardware.secure_element@1.0.vendor:32 \
-    android.hardware.secure_element@1.1.vendor:32 \
-    android.hardware.secure_element@1.2.vendor:32 \
     android.hardware.thermal@1.0.vendor:32 \
     android.hardware.thermal@2.0.vendor:32 \
-    android.hardware.weaver@1.0.vendor:64 \
-    android.hardware.wifi@1.1.vendor:64 \
-    android.hardware.wifi@1.2.vendor:64 \
-    android.hardware.wifi@1.3.vendor:64 \
-    android.hardware.wifi@1.4.vendor:64 \
-    android.hardware.wifi@1.5.vendor:64 \
-    android.hardware.wifi@1.6.vendor:64 \
+    android.hardware.thermal-V1-ndk.vendor:32 \
+    android.hardware.weaver-V2-ndk.vendor:64 \
+    android.hardware.wifi-V1-ndk.vendor:64 \
     com.google.hardware.pixel.display-V6-ndk.vendor
 
 # Properties

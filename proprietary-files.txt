@@ -15,6 +15,7 @@ product/etc/firmware/music_detector.sound_model_tflite
 
 # Camera extensions
 product/app/PixelCameraServicesF10/PixelCameraServicesF10.apk;PRESIGNED
+product/etc/permissions/androidx.camera.extensions.impl.xml
 
 # Felica
 product/etc/felica/common.cfg
@@ -57,7 +58,6 @@ product/lib/libdmengine.so
 product/lib/libdmjavaplugin.so
 product/lib64/libdmengine.so
 product/lib64/libdmjavaplugin.so
-product/priv-app/CarrierServices/CarrierServices.apk;PRESIGNED
 product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
 product/priv-app/CarrierWifi/CarrierWifi.apk;PRESIGNED
 product/priv-app/ConnMO/ConnMO.apk
@@ -83,14 +83,19 @@ product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
 
 # Camera extensions
 system_ext/etc/permissions/com.google.android.camera.extensions.xml
+system_ext/etc/permissions/com.google.android.camerax.extensions.xml
 system_ext/framework/com.google.android.camera.extensions.jar
+system_ext/framework/com.google.android.camerax.extensions.jar
 
 # Edge TPU
 system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service
 system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc
+system_ext/etc/public.libraries-google.txt
 system_ext/etc/vintf/manifest/vendor.google.edgetpu_app_service@1.0-service.xml
+system_ext/lib/libedgetpu_dba.google.so
 system_ext/lib64/com.google.edgetpu_app_service-V2-ndk.so
 system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
+system_ext/lib64/libedgetpu_dba.google.so
 
 # HBM
 system_ext/lib64/libhbmsvmanager_jni.so
@@ -106,7 +111,7 @@ system_ext/etc/permissions/com.shannon.imsservice.xml
 system_ext/etc/permissions/com.shannon.rcsservice.xml
 system_ext/lib/libmediaadaptor.so
 system_ext/lib64/libmediaadaptor.so
-system_ext/priv-app/QualifiedNetworksService/QualifiedNetworksService.apk
+system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.apk
 system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
 system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
 
@@ -120,6 +125,7 @@ system_ext/priv-app/PixelNfc/PixelNfc.apk
 system_ext/etc/permissions/privapp-permissions-google-se.xml
 
 # Radio
+system_ext/etc/default-permissions/default-permissions-euiccpixel.xml
 system_ext/etc/permissions/com.android.omadm.radioconfig.xml
 system_ext/etc/permissions/com.google.euiccpixel.permissions.xml
 system_ext/etc/permissions/com.google.euiccpixel.xml
@@ -129,12 +135,12 @@ system_ext/framework/google-ril.jar
 system_ext/priv-app/CarrierSetup/CarrierSetup.apk;PRESIGNED
 system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk
 system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk
-system_ext/priv-app/EuiccSupportPixel/DKA_RC5_DVT.in
-system_ext/priv-app/EuiccSupportPixel/DKA_RC5_P22_DVT.in
-system_ext/priv-app/EuiccSupportPixel/DKA_RC5_P22_EVT.in
+system_ext/priv-app/EuiccSupportPixel/DKA_RC7_DVT.in
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_DVT.up
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_EVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_RC7_P22_DVT.in
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_P22_DVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_RC7_P22_EVT.in
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_P22_EVT.up
 system_ext/priv-app/EuiccSupportPixel/EuiccSupportPixel.apk;PRESIGNED
 system_ext/priv-app/EuiccSupportPixel/esim-full-ofl-v1.img
