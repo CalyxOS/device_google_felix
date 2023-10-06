@@ -30,6 +30,9 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)-kernel/Image.lz4
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/permissions/permissions_com.google.android.apps.camera.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.apps.camera.services.xml
 
+# wireless_charger HAL service
+include device/google/gs-common/wireless_charger/wireless_charger.mk
+
 # Build necessary packages for vendor
 
 # Codec2
