@@ -11,6 +11,3 @@ vendor.rild.libpath=libsitril.so
 
 # SSR
 vendor.debug.ssrdump.type=sscoredump
-
-# UWB
-ro.vendor.uwb.calibration.calibrationpaths=/vendor/etc/uwb/calib_paths
