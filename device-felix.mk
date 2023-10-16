@@ -32,9 +32,6 @@ include device/google/gs201/device-shipping-common.mk
 $(call soong_config_set,fp_hal_feature,pixel_product, product_a)
 include device/google/felix/vibrator/cs40l26/device.mk
 include device/google/gs101/bluetooth/bluetooth.mk
-ifeq ($(filter factory_felix, $(TARGET_PRODUCT)),)
-include device/google/felix/uwb/uwb_calibration.mk
-endif
 
 # go/lyric-soong-variables
 $(call soong_config_set,lyric,camera_hardware,felix)

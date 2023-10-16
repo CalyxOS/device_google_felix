@@ -15,7 +15,6 @@ vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging
 vendor/bin/hw/android.hardware.identity@1.0-service.citadel
 vendor/bin/hw/android.hardware.input.processor-service
 vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl
-vendor/bin/hw/android.hardware.qorvo.uwb.service
 vendor/bin/hw/android.hardware.secure_element@1.2-uicc-service
 vendor/bin/hw/android.hardware.security.keymint-service.citadel
 vendor/bin/hw/android.hardware.weaver@1.0-service.citadel
@@ -185,8 +184,6 @@ vendor/etc/init/libg3a_gabc.rc
 vendor/etc/init/libg3a_gaf.rc
 vendor/etc/init/libg3a_ghawb.rc
 vendor/etc/init/pktrouter.rc
-vendor/etc/init/qorvo.uwb-calib.rc
-vendor/etc/init/qorvo.uwb-service.rc
 vendor/etc/init/rfsd.rc
 vendor/etc/init/rild_exynos.rc
 vendor/etc/init/samsung.hardware.media.c2@1.0-service.rc
@@ -233,8 +230,6 @@ vendor/etc/sensors/registry/felix_proto_1_1.reg
 vendor/etc/touchflow_inner.pb
 vendor/etc/touchflow_outer.pb
 vendor/etc/twoshay_config.json
-vendor/etc/uwb/calib_paths
-vendor/etc/uwb/libuwb-uci.conf
 vendor/etc/vintf/manifest/android.hardware.biometrics.face-service-felix.xml
 vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google-apex.xml
 vendor/etc/vintf/manifest/android.hardware.confirmationui@1.0-service.trusty.vendor.xml
@@ -248,7 +243,6 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/etc/vintf/manifest/manifest_input.processor-service.xml
 vendor/etc/vintf/manifest/manifest_radioext.xml
 vendor/etc/vintf/manifest/manifest_wifi_ext.xml
-vendor/etc/vintf/manifest/qorvo.uwb-service.xml
 vendor/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.google.edgetpu_vendor_service@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.google.google_battery-default.xml
@@ -1089,7 +1083,6 @@ vendor/lib/libion_exynos.so
 vendor/lib/libmahalcontroller.so
 vendor/lib/libmetrics_logger.so
 vendor/lib/liboemservice.so
-vendor/lib/libqorvo_uwb_params_nfcc.so
 vendor/lib/libril-aidl.so
 vendor/lib/libril_gfeature.so
 vendor/lib/libril_sitril.so
@@ -1224,7 +1217,6 @@ vendor/lib64/libnos_citadeld_proxy.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/liboemservice.so
 vendor/lib64/libproxy_trusty.so
-vendor/lib64/libqorvo_uwb_params_nfcc.so
 vendor/lib64/libril-aidl.so
 vendor/lib64/libril_gfeature.so
 vendor/lib64/libril_sitril.so
