@@ -3,8 +3,8 @@
 # product partition
 
 # Camera extensions
-product/app/PixelCameraServicesF10/PixelCameraServicesF10.apk;PRESIGNED
 product/etc/permissions/androidx.camera.extensions.impl.xml
+product/priv-app/PixelCameraServicesF10/PixelCameraServicesF10.apk;PRESIGNED
 
 # IMS
 product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
