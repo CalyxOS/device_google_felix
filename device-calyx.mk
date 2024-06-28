@@ -16,6 +16,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/google/felix/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
 
+# Freeform window management
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.freeform_window_management.xml
+
 # HBM
 PRODUCT_COPY_FILES += \
     device/google/felix/permissions/permissions_com.android.hbmsvmanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/permissions_com.android.hbmsvmanager.xml
