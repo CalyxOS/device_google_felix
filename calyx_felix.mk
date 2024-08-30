@@ -1,6 +1,6 @@
 # Inherit some common stuff.
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/calyx/config/common_phone.mk)
+$(call inherit-product, vendor/calyx/config/common_foldable_book_telephony.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/gs201/calyx_common.mk)
