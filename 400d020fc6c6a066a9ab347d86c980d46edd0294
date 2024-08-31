@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f6606db_386875ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2024-08-31T23:46:40Z",
+      "side": 1,
+      "message": "https://review.calyxos.org/c/CalyxOS/device_google_felix/+/29186",
+      "revId": "400d020fc6c6a066a9ab347d86c980d46edd0294",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
