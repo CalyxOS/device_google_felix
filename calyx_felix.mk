@@ -14,9 +14,9 @@ PRODUCT_BRAND := google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=felix \
-    PRIVATE_BUILD_DESC="felix-user 14 AP2A.240805.005 12025142 release-keys"
+    PRIVATE_BUILD_DESC="felix-user 14 AP2A.240905.003 12231197 release-keys"
 
-BUILD_FINGERPRINT := google/felix/felix:14/AP2A.240805.005/12025142:user/release-keys
+BUILD_FINGERPRINT := google/felix/felix:14/AP2A.240905.003/12231197:user/release-keys
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
