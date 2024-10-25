@@ -22,7 +22,7 @@ PRODUCT_MODEL := Pixel Fold
 PRODUCT_NAME := calyx_$(DEVICE_CODENAME)
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-    BuildDesc=felix-user[[:space:]]15[[:space:]]AP3A.241005.015[[:space:]]12366759[[:space:]]release-keys \
+    BuildDesc="felix-user 15 AP3A.241005.015 12366759 release-keys" \
     BuildFingerprint=google/felix/felix:15/AP3A.241005.015/12366759:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
