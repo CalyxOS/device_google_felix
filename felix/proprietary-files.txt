@@ -76,4 +76,4 @@ system_ext/priv-app/OemRilService/OemRilService.apk;PRESIGNED
 
 # UWB
 system_ext/etc/permissions/privapp-permissions-qorvo.xml
--system_ext/priv-app/UwbVendorService/UwbVendorService.apk;:com.qorvo.uwb.certificate
+system_ext/priv-app/UwbVendorService/UwbVendorService.apk;CERTIFICATE=com.qorvo.uwb.certificate
