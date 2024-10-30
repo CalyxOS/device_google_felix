@@ -24,6 +24,9 @@
      entries do not follow the convention, but all new entries should. -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- IWLAN-->
+    <string name="config_qualified_networks_service_package">com.android.qns</string>
+
     <!-- If true, allows rotation resolver service to help resolve screen rotation. -->
     <bool name="config_allowRotationResolver">false</bool>
 
@@ -51,9 +54,11 @@
         <item>3</item>
     </integer-array>
 
-    <!-- Indicates whether the window manager reacts to half-fold device states by overriding
-     rotation. -->
-    <bool name="config_windowManagerHalfFoldAutoRotateOverride">true</bool>
+    <!-- The device states (supplied by DeviceStateManager) that should be treated as concurrent
+    display state. Default is empty. -->
+    <integer-array name="config_concurrentDisplayDeviceStates">
+        <item>4</item>
+    </integer-array>
 
     <!-- Indicates whether the window manager pauses autorotation when folding or unfolding
      a foldable device based on hinge angle sensor events and physical display switch events. -->
@@ -93,6 +98,7 @@
         <item>0:1</item>
         <item>1:0:2</item>
         <item>2:2</item>
+        <item>3:0:0</item>
     </string-array>
 
     <!-- Device states where the sensor based rotation values should be reversed around the Z axis
@@ -102,16 +108,23 @@
         <item>3</item>
     </integer-array>
 
+    <!-- Boolean indicating whether secondary built-in displays should have their orientation
+         match the active default display. This config assumes that the secondary display only
+         requires swapping ROTATION_90 and ROTATION_270.
+         TODO(b/265991392): This should eventually be configured and parsed in
+          display_settings.xml -->
+    <bool name="config_matchSecondaryInternalDisplaysOrientationToReverseDefaultDisplay">true</bool>
+
     <!-- The time in milliseconds after which a press on power button is considered "long". -->
     <integer name="config_longPressOnPowerDurationMs">750</integer>
-
-    <!-- Control whether the pickup gesture is enabled by default. This value will be used
-     during initialization when the setting is still null. -->
-    <bool name="config_dozePickupGestureEnabled">false</bool>
 
     <!-- Amount of time in ms the user needs to press the relevant key to bring up the
          global actions dialog -->
     <integer name="config_globalActionsKeyTimeout">750</integer>
+
+    <!-- Class name of the device specific implementation of DeviceStatePolicy.Provider
+        or empty if the default should be used. -->
+    <string translatable="false" name="config_deviceSpecificDeviceStatePolicyProvider">com.google.android.server.policy.FelixDeviceStatePolicyProvider</string>
 
     <!-- Indicates whether device has a power button fingerprint sensor. -->
     <bool name="config_is_powerbutton_fps">true</bool>
@@ -130,6 +143,7 @@
         <item>1:2</item>
         <item>2:3</item>
         <item>3:1</item>
+        <item>4:1000</item>
     </string-array>
 
     <!-- Which Surface rotations are considered as tabletop posture (horizontal hinge) when the
@@ -152,7 +166,7 @@
          Note: Activity min/max aspect ratio restrictions will still be respected.
          Therefore this override can control the maximum screen area that can be occupied by
          the app in the letterbox mode. -->
-    <item type="dimen" name="config_fixedOrientationLetterboxAspectRatio">1.333</item>
+    <item name="config_fixedOrientationLetterboxAspectRatio" format="float" type="dimen">1.333</item>
 
     <!-- Corners radius for activity presented the letterbox mode. Values < 0 enable rounded
          corners with radius equal to min between device bottom corner radii. Default 0 value turns
@@ -190,6 +204,12 @@
          TODO(b/255532890) Enable when ignoreOrientationRequest is set -->
     <bool name="config_letterboxIsEnabledForTranslucentActivities">true</bool>
 
+    <!-- Whether per-app user aspect ratio override settings is enabled -->
+    <bool name="config_appCompatUserAppAspectRatioSettingsIsEnabled">true</bool>
+
+    <!-- Whether per-app fullscreen override option is allowed in user aspect ratio settings -->
+    <bool name="config_appCompatUserAppAspectRatioFullscreenIsEnabled">true</bool>
+
     <!-- Whether sending compat fake focus for split screen resumed activities is enabled.
          Needed because some game engines wait to get focus before drawing the content of
          the app which isn't guaranteed by default in multi-window modes. -->
@@ -212,6 +232,7 @@
     <!-- List of the labels of requestable device state config values -->
     <string-array name="config_deviceStatesAvailableForAppRequests">
         <item>config_deviceStateRearDisplay</item>
+        <item>config_deviceStateConcurrentRearDisplay</item>
     </string-array>
 
     <!-- Device state that corresponds to rear display mode, feature provided
@@ -220,12 +241,15 @@
     -->
     <integer name="config_deviceStateRearDisplay">3</integer>
 
-    <!-- Whether the vendor power press code need to be mapped. -->
-    <bool name="config_powerPressMapping">true</bool>
+    <!-- Device state that corresponds to concurrent display mode where the default display
+         is the internal display. Public API for the feature is provided through Jetpack
+         WindowManager.
+         TODO(b/236022708) Move concurrent display state to device state config file
+    -->
+    <integer name="config_deviceStateConcurrentRearDisplay">4</integer>
 
-    <!-- Power press vendor code. -->
-    <integer name="config_powerPressCode">19</integer>
-
-    <!-- IWLAN-->
-    <string name="config_qualified_networks_service_package">com.android.qns</string>
+    <!-- Physical display address that corresponds to the rear display in rear display mode
+         and concurrent display mode. Used to get information about the display before
+         entering the corresponding modes -->
+    <string name="config_rearDisplayPhysicalAddress" translatable="false">4619827677550801153</string>
 </resources>
