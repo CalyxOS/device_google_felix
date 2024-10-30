@@ -18,6 +18,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
+# Fold extensions
+PRODUCT_SYSTEM_SERVER_JARS += \
+    system_ext:felix-services
+
 # For Google Camera
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/sysconfig/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml

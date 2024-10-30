@@ -30,6 +30,9 @@ system_ext/lib64/com.google.edgetpu_app_service-V3-ndk.so
 system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
 system_ext/lib64/libedgetpu_dba.google.so
 
+# Fold extensions
+system_ext/framework/felix-services.jar
+
 # HBM
 system_ext/lib64/libhbmsvmanager_jni.so;SYMLINK=system_ext/priv-app/HbmSVManager/lib/arm64/libhbmsvmanager_jni.so
 system_ext/priv-app/HbmSVManager/HbmSVManager.apk
