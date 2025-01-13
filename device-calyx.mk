@@ -33,6 +33,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     HbmSVManagerOverlayFelix
 
+# IWLAN
+PRODUCT_PACKAGES += \
+    Iwlan
+
 # Pixel Camera Services / Camera extensions
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/permissions/permissions_com.google.android.apps.camera.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/permissions_com.google.android.apps.camera.services.xml
