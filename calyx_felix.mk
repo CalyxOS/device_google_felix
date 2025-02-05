@@ -22,8 +22,8 @@ PRODUCT_MODEL := Pixel Fold
 PRODUCT_NAME := calyx_$(DEVICE_CODENAME)
 
 PRODUCT_BUILD_PROP_OVERRIDES := \
-    BuildDesc="felix-user 15 AP4A.250105.002 12701944 release-keys" \
-    BuildFingerprint=google/felix/felix:15/AP4A.250105.002/12701944:user/release-keys \
+    BuildDesc="felix-user 15 AP4A.250205.002 12821496 release-keys" \
+    BuildFingerprint=google/felix/felix:15/AP4A.250205.002/12821496:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
