@@ -12,11 +12,6 @@ product/etc/sysconfig/allowlist_com.shannon.imsservice.xml
 # Radio
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
 
-# system partition
-
-# IMS
-system/bin/oem-iptables-init.sh
-
 # system_ext partition
 
 # Camera extensions
@@ -50,11 +45,6 @@ system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.
 system_ext/priv-app/ShannonIms/ShannonIms.apk;PRESIGNED
 system_ext/priv-app/ShannonRcs/ShannonRcs.apk;PRESIGNED
 
-# IWLAN
-system_ext/etc/permissions/privapp-permlist_com.google.pixel.iwlan.xml
-system_ext/etc/sysconfig/sysconfig_com.google.pixel.iwlan.xml
-system_ext/priv-app/PixelIwlan/PixelIwlan.apk
-
 # Radio
 system_ext/etc/default-permissions/default-permissions-euiccpixel.xml
 system_ext/etc/permissions/com.google.euiccpixel.permissions.xml
@@ -62,6 +52,11 @@ system_ext/etc/permissions/com.google.euiccpixel.xml
 system_ext/etc/permissions/google-ril.xml
 system_ext/framework/google-ril.jar
 system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_DVT.in
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_DVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_EVT.in
+system_ext/priv-app/EuiccSupportPixel/DKA_0105_P22_EVT.up
+system_ext/priv-app/EuiccSupportPixel/DKA_0109_P22_DVT.up
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_DVT.in
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_DVT.up
 system_ext/priv-app/EuiccSupportPixel/DKA_RC7_EVT.up
