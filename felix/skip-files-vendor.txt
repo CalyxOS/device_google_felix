@@ -493,7 +493,6 @@ etc/thermal_info_config_proactive_skin.json
 etc/ueventd.rc
 etc/usb_audio_policy_configuration.xml
 etc/uwb/UWB-calibration-am.conf
-etc/uwb/UWB-calibration-ar.conf
 etc/uwb/UWB-calibration-at.conf
 etc/uwb/UWB-calibration-az.conf
 etc/uwb/UWB-calibration-be.conf
@@ -530,13 +529,10 @@ etc/uwb/UWB-calibration-ni.conf
 etc/uwb/UWB-calibration-nl.conf
 etc/uwb/UWB-calibration-no.conf
 etc/uwb/UWB-calibration-np.conf
-etc/uwb/UWB-calibration-pk.conf
 etc/uwb/UWB-calibration-pl.conf
 etc/uwb/UWB-calibration-pt.conf
-etc/uwb/UWB-calibration-py.conf
 etc/uwb/UWB-calibration-ro.conf
 etc/uwb/UWB-calibration-ru.conf
-etc/uwb/UWB-calibration-sb.conf
 etc/uwb/UWB-calibration-se.conf
 etc/uwb/UWB-calibration-si.conf
 etc/uwb/UWB-calibration-sk.conf
@@ -1305,8 +1301,6 @@ lib64/android.hardware.media.bufferpool2-V2-ndk.so
 lib64/android.hardware.media.bufferpool@2.0.so
 lib64/android.hardware.media.c2-V1-ndk.so
 lib64/android.hardware.media.c2@1.0.so
-lib64/android.hardware.media.c2@1.1.so
-lib64/android.hardware.media.c2@1.2.so
 lib64/android.hardware.media.omx@1.0.so
 lib64/android.hardware.media@1.0.so
 lib64/libavservices_minijail.so
@@ -1316,8 +1310,6 @@ lib64/libcodec2_aidl.so
 lib64/libcodec2_aidl_noisurface.so
 lib64/libcodec2_hal_common.so
 lib64/libcodec2_hidl@1.0.so
-lib64/libcodec2_hidl@1.1.so
-lib64/libcodec2_hidl@1.2.so
 lib64/libcodec2_hidl_plugin.so
 lib64/libcodec2_soft_common.so
 lib64/libcodec2_vndk.so
@@ -1328,15 +1320,8 @@ lib64/libsfplugin_ccodec_utils.so
 lib64/libstagefright_aidl_bufferpool2.so
 lib64/libstagefright_bufferpool@2.0.1.so
 lib64/libstagefright_bufferqueue_helper.so
-lib64/libstagefright_omx.so
 lib64/libstagefright_omx_utils.so
 lib64/libstagefright_xmlparser.so
-
-# Confirmation UI
-lib64/android.hardware.confirmationui-V1-ndk.so
-lib64/android.hardware.confirmationui-lib.trusty.so
-lib64/android.hardware.confirmationui@1.0.so
-lib64/libteeui_hal_support.so
 
 # Contexthub
 lib/android.hardware.contexthub-V3-ndk.so
@@ -1365,7 +1350,6 @@ lib64/android.hardware.security.keymint-V3-ndk.so
 lib64/libcppbor.so
 lib64/libcppcose_rkp.so
 lib64/libkeymaster_portable.so
-lib64/libkeymint_support.so
 lib64/libkeymint_support_V3.so
 lib64/libnos.so
 lib64/libnos_client_citadel.so
@@ -1413,10 +1397,8 @@ lib64/libsensorndkbridge.so
 # Trusty
 lib64/android.trusty.stats.nw.setter-cpp.so
 lib64/libbinder_trusty.so
-lib64/libtrusty_metrics.so
 
 # Misc interfaces
-lib/android.frameworks.stats-V1-ndk.so
 lib/android.frameworks.stats-V2-ndk.so
 lib/android.hardware.graphics.allocator-V2-ndk.so
 lib/android.hardware.graphics.allocator@2.0.so
@@ -1424,7 +1406,6 @@ lib/android.hardware.graphics.allocator@3.0.so
 lib/android.hardware.graphics.allocator@4.0.so
 lib/android.hardware.graphics.bufferqueue@1.0.so
 lib/android.hardware.graphics.bufferqueue@2.0.so
-lib/android.hardware.graphics.common-V3-ndk.so
 lib/android.hardware.graphics.common-V6-ndk.so
 lib/android.hardware.graphics.common@1.0.so
 lib/android.hardware.graphics.common@1.1.so
@@ -1486,8 +1467,6 @@ lib64/android.hardware.health-V1-ndk.so
 lib64/android.hardware.input.common-V1-ndk.so
 lib64/android.hardware.input.processor-V1-ndk.so
 lib64/android.hardware.keymaster-V4-ndk.so
-lib64/android.hardware.keymaster@3.0.so
-lib64/android.hardware.keymaster@4.0.so
 lib64/android.hardware.memtrack-V1-ndk.so
 lib64/android.hardware.neuralnetworks-V4-ndk.so
 lib64/android.hardware.neuralnetworks@1.0.so
