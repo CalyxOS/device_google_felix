@@ -17,7 +17,7 @@
 TARGET_RECOVERY_DEFAULT_ROTATION := ROTATION_RIGHT
 
 TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_FELIX_VERSION)
-TARGET_KERNEL_DIR := device/google/felix-kernels/calyx
+TARGET_KERNEL_DIR := device/google/felix-kernels/$(TARGET_LINUX_KERNEL_VERSION)
 TARGET_BOARD_KERNEL_HEADERS := $(TARGET_KERNEL_DIR)/kernel-headers
 
 $(call inherit-product, device/google/felix/uwb/uwb_calibration_country.mk)
