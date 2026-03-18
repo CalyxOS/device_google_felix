@@ -5,4 +5,5 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_felix.mk \
+    $(LOCAL_DIR)/calyx_felix.mk \
     $(LOCAL_DIR)/lineage_felix.mk
