@@ -108,22 +108,8 @@
     <!-- Physical ID for the camera of outer display that needs extra protection -->
     <string name="config_protectedPhysicalCameraId" translatable="false">5</string>
 
-    <!-- Comma-separated list of packages to exclude from camera protection e.g.
-    "com.android.systemui,com.android.xyz" -->
-    <string name="config_cameraProtectionExcludedPackages" translatable="false">com.google.android.as</string>
-
     <!--  Flag to turn on the rendering of the above path or not  -->
     <bool name="config_enableDisplayCutoutProtection">true</bool>
-
-    <!-- Whether to support posture listening for face auth, default is 0(DEVICE_POSTURE_UNKNOWN)
-         means systemui will try listening on all postures.
-         0 : DEVICE_POSTURE_UNKNOWN
-         1 : DEVICE_POSTURE_CLOSED
-         2 : DEVICE_POSTURE_HALF_OPENED
-         3 : DEVICE_POSTURE_OPENED
-         4 : DEVICE_POSTURE_FLIPPED
-    -->
-    <integer name="config_face_auth_supported_posture">1</integer>
 
     <!--  Whether to use a machine learning model for back gesture falsing. -->
     <bool name="config_useBackGestureML">false</bool>
