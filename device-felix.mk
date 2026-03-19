@@ -37,8 +37,6 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGES += \
     BiometricGs201Overlay \
-    DMServiceOverlayProductGs201 \
-    DMServiceOverlayVendorFelix \
     FrameworkResOverlayProductFelix \
     FrameworkResOverlayVendorFelix \
     HbmSVManagerOverlayProductFelix \
